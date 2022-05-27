@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <!--避免微信管理防盗链机制-->
+    <meta name="referrer" content="no-referrer"/>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1"/>
+    <title>微巴士出行</title>
+
+    <script>
+      (function (doc, win) {   
+        var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+          var clientWidth = docEl.clientWidth;
+          if (!clientWidth) return;
+          docEl.style.fontSize = 48 * (clientWidth / 360) + 'px';
+          console.log(clientWidth);
+          console.log(docEl.style.fontSize);
+        };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+      })(document, window);
+    </script>
+  </head>
+
+  <body>
+
+    <div id="app">
+      <img src="../img/error.png" class="errorImg" alt="">
+      <p class="errorText">啊噢~页面跳转失败~</p>
+      <div class="wx">
+        <img src="../img/wx.png" class="wxImg" alt="">
+        <div class="wxText">
+          <div>
+            请用微信扫码打开
+          </div>
+          <div>
+            仅支持微信扫码
+          </div>
+          
+
+        </div>
+      </div>
+    </div>
+    <!-- built files will be auto injected -->
+
+
+  </body>
+  <style>
+    #app{
+      padding-top: 2.6rem;
+      text-align: center;
+    }
+    .errorImg{
+      width: 4rem;
+      height: 2.6rem;
+      margin-bottom: 0.28rem;
+    }
+    .errorText{
+      color: #999999;
+      font-size: 0.28rem;
+      line-height: 0.44rem;
+      margin-bottom: 1.58rem;
+    }
+    .wx{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .wxImg{
+      width: 0.8rem;
+      height: 0.8rem;
+      margin-right: 0.2rem;
+    }
+    .wxText{
+      color: #555555;
+      font-size: 0.28rem;
+      line-height: 0.4rem;
+    }
+  </style>
+</html>

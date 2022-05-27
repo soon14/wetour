@@ -1,0 +1,42 @@
+.appointmentFrom{
+	// padding: 0 35rpx;
+}
+
+.appointmentView{
+	padding: 16rpx 0;
+	// margin: 0rpx 35rpx;
+	border-bottom: 1rpx solid #dfdfdf;
+	&-label{
+		font-family: PingFang SC-Regular, PingFang SC;
+		@include fs(28rpx,400,#666666,33rpx);
+		margin-bottom: 14rpx;
+	}
+	&-value{
+		@include fs(36rpx,600,#111111,42rpx);
+		flex: 1;
+		&-input{
+			width: 100%;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			width: 100%;
+		}
+	}
+}
+.appointmentBtn{
+	width: 620rpx;
+	height: 88rpx;
+	background: #111111;
+	border-radius: 88rpx;
+	text-align: center;
+	@include fs(28rpx,600,#FFFFFF,88rpx);
+	margin: 18rpx 0rpx 20rpx 0rpx;
+	border: none;
+}
+.appointmentBtn::after{ border: none; }
+.w50{
+	width: calc(50% - 25rpx) !important;
+}
+.w40{
+	width: calc(42% - 25rpx) !important;
+}

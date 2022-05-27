@@ -1,0 +1,22 @@
+{
+  "name": "wetour-wechat-mini",
+  "version": "1.0.0",
+  "description": "微途用户小程序",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://git.ubus.vip/wetour/wetour-wechat-mini.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "moment": "^2.29.1"
+  },
+  "dependencies": {
+    "js-pinyin": "^0.1.9"
+  }
+}

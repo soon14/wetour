@@ -1,0 +1,294 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/welcome/welcome",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/user/set/about/index",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom", //自定义顶部栏
+				"navigationBarTextStyle": "white", //关闭按钮样式和头部文字样式
+				"enablePullDownRefresh": false, //是否开启下拉
+				"app-plus": {
+					"bounce": "none" // 将回弹属性关掉
+				}
+			}
+		},
+
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "uni_modules/uni-upgrade-center-app/pages/upgrade-popup",
+			"style": {
+				"disableScroll": true,
+				"app-plus": {
+					"backgroundColorTop": "transparent",
+					"background": "transparent",
+					"titleNView": false,
+					"scrollIndicator": false,
+					"popGesture": "none",
+					"animationType": "fade-in",
+					"animationDuration": 200
+				}
+			}
+		},
+
+		{
+			"path": "pages/index/detail-index/index",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+		},
+
+		{
+			"path": "pages/register/register",
+			"style": {
+				"navigationStyle": "custom", //自定义顶部栏
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "white",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"bounce": "none" // 将回弹属性关掉
+
+				}
+			}
+		},
+		{
+			"path": "pages/user/set/index",
+			"style": {
+				"navigationStyle": "custom", //自定义顶部栏
+				"app-plus": {
+					"bounce": "none" // 将回弹属性关掉
+
+				}
+			}
+		},
+		{
+			"path": "pages/addCity/addCity",
+			"style": {
+				"navigationStyle": "custom", //自定义顶部栏
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "white",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"bounce": "none" // 将回弹属性关掉
+
+				}
+			}
+		},
+
+
+		{
+			"path": "pages/account/apply-account/index",
+			"style": {
+				// "navigationBarTitleText": "home"
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/account/detail-account/index",
+			"style": {
+				// "navigationBarTitleText": "home"
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/account/msg-account/index",
+			"style": {
+				// "navigationBarTitleText": "home"
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/account/record-account/index",
+			"style": {
+				// "navigationBarTitleText": "home"
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/account/account_warn/index",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/order/detail-order/index",
+			"style": {
+				// "navigationBarTitleText": "home"
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/order/index",
+			"style": {
+				// "navigationBarTitleText": "home"
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/audit/audit-cart/index",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/audit/audit-driver/index",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/audit/index",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/driverCart/add-result/index",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/driverCart/add-cart/index",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/driverCart/detail-cart/index",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/driverCart/detail-driver/index",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/driverCart/add-driver/index",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "uview-ui/components/u-avatar-cropper/u-avatar-cropper",
+			"style": {
+				"navigationBarTitleText": "裁剪",
+				"navigationBarBackgroundColor": "#000000"
+			}
+		},
+
+		{
+			"path": "pages/driverCart/index",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/user/index",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"bounce": "none" // 将回弹属性关掉
+
+				}
+			}
+		}, {
+			"path": "pages/user/set/userInfo/userInfo",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"bounce": "none" // 将回弹属性关掉
+
+				}
+			}
+
+		},  {
+			"path": "pages/webView/webView",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	],
+	// "subPackages": [
+	//   {
+	//     "root": "subPages",
+	//     "pages": [
+	// 		{
+	// 		  "path": "login/quick_logon",
+	// 		  "style": {
+	// 			"navigationStyle": "custom",
+	// 			"app-plus": {
+	// 			  "animationType": "slide-in-right",
+	// 			  "titleNView": false,
+	// 			  "bounce": "none"
+	// 			}
+	// 		  }
+	// 		},
+	//     ]
+	//   }
+	// ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#f0f0f0",
+		"backgroundColor": "#f0f0f0"
+	},
+	"tabBar": {
+		"list": [{
+				"pagePath": "pages/index/index"
+			},
+			{
+				"pagePath": "pages/driverCart/index"
+			},
+			{
+				"pagePath": "pages/user/index"
+			}
+		]
+	}
+}

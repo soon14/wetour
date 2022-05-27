@@ -1,0 +1,277 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/user/index",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+		}
+	],
+	"subPackages": [{
+			"root": "subPages",
+			"pages": [{
+					"path": "login/quick_logon",
+					"style": {
+						"navigationStyle": "custom",
+						"app-plus": {
+							"animationType": "slide-in-right",
+							"titleNView": false,
+							"bounce": "none"
+						}
+					}
+				},
+				{
+					"path": "selectDay/index",
+					"style": {
+						"navigationStyle": "custom",
+						"app-plus": {
+							"animationType": "slide-in-right",
+							"titleNView": false,
+							"bounce": "none"
+						}
+					}
+				},
+				{
+					"path": "discounts/index",
+					"style": {
+						"navigationStyle": "custom",
+						"enablePullDownRefresh": true,
+						"app-plus": {
+							"animationType": "slide-in-right",
+							"titleNView": false,
+							"bounce": "none"
+						}
+					}
+				},
+				{
+					"path": "discounts/detail",
+					"style": {
+						"navigationStyle": "custom",
+						"app-plus": {
+							"animationType": "slide-in-right",
+							"titleNView": false,
+							"bounce": "none"
+						}
+					}
+				},
+				{
+					"path": "activity/index",
+					"style": {
+						"navigationStyle": "custom",
+						"app-plus": {
+							"animationType": "slide-in-right",
+							"titleNView": false,
+							"bounce": "none"
+						}
+					}
+				},
+				{
+					"path": "selectCity/selectCity",
+					"style": {
+						"navigationStyle": "custom",
+						"app-plus": {
+							"animationType": "slide-in-right",
+							"titleNView": false,
+							"bounce": "none"
+						}
+					}
+				},
+				{
+					"path": "selectAirport/selectAirport",
+					"style": {
+						"navigationStyle": "custom",
+						"app-plus": {
+							"animationType": "slide-in-right",
+							"titleNView": false,
+							"bounce": "none"
+						}
+					}
+				},
+				{
+					"path": "selectFlight/selectFlight",
+					"style": {
+						"navigationStyle": "custom",
+						"app-plus": {
+							"animationType": "slide-in-right",
+							"titleNView": false,
+							"bounce": "none"
+						}
+					}
+				},
+				{
+					"path": "multiCharter/multiCharter",
+					"style": {
+						"navigationStyle": "custom",
+						"app-plus": {
+							"animationType": "slide-in-right",
+							"titleNView": false,
+							"bounce": "none"
+						}
+					}
+
+				},
+				{
+					"path": "dayCharter/dayCharter",
+					"style": {
+						"navigationStyle": "custom",
+						"app-plus": {
+							"animationType": "slide-in-right",
+							"titleNView": false,
+							"bounce": "none"
+						}
+					}
+
+				},
+				{
+					"path": "selectAddress/selectAddress",
+					"style": {
+						"navigationStyle": "custom",
+						"app-plus": {
+							"animationType": "slide-in-right",
+							"titleNView": false,
+							"bounce": "none"
+						}
+					}
+
+				},
+				{
+					"path": "selectBus/selectBus",
+					"style": {
+						"navigationStyle": "custom",
+						"app-plus": {
+							"animationType": "slide-in-right",
+							"titleNView": false,
+							"bounce": "none"
+						}
+					}
+
+				},
+				{
+					"path" : "orderinfo/orderinfo",
+					"style" :                                                                                    
+					{
+						"navigationStyle": "custom",
+						"app-plus": {
+						  "animationType": "slide-in-right",
+						  "titleNView": false,
+						  "bounce": "none"
+						}
+					}
+				
+				}
+			    ,{
+					"path" : "orderinfo/success",
+					"style" :                                                                                    
+					{
+						"navigationStyle": "custom",
+						"app-plus": {
+						  "animationType": "slide-in-right",
+						  "titleNView": false,
+						  "bounce": "none"
+						}
+					}
+				
+				},{
+					"path" : "user/other",
+					"style" :                                                                                    
+					{
+						"navigationStyle": "custom",
+						"app-plus": {
+						  "animationType": "slide-in-right",
+						  "titleNView": false,
+						  "bounce": "none"
+						}
+					}
+				
+				},{
+					"path" : "user/about",
+					"style" :                                                                                    
+					{
+						"navigationStyle": "custom",
+						"app-plus": {
+						  "animationType": "slide-in-right",
+						  "titleNView": false,
+						  "bounce": "none"
+						}
+					}
+				
+				}
+				
+             
+            ]
+		},
+		{
+			"root": "order",
+			"pages": [{
+				"path": "orderList/orderList",
+				"style": {
+					"navigationStyle": "custom",
+					"enablePullDownRefresh": false,
+					"onReachBottomDistance":50
+				}
+
+			}    ,{
+                    "path" : "orderDetail/orderDetail",
+                    "style" :                                                                                    
+                {
+                   "navigationStyle": "custom",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+				
+            ]
+
+		}
+	],
+	"preloadRule": {
+	    "pages/index/index": {
+	      "network": "wifi",
+	      "packages": ["subPages","order"]
+	    }
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#f0f0f0",
+		"backgroundColor": "#f8f8f8"
+	},
+	"tabBar": {
+		"color": "#555555",
+		"fontSize":"12px",
+		"selectedColor": "#272727",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/image/tabbar/tabbar1.png",
+				"selectedIconPath": "static/image/tabbar/tabbar3.png"
+			},
+			// {
+			// 	"pagePath": "pages/driverCart/index",
+			// 	"text": "我的订单",
+			// 	"iconPath": "static/image/tabbar/tabbar2.png",
+			// 	"selectedIconPath": "static/image/tabbar/tabbara2.png"
+			// },
+			{
+				"pagePath": "pages/user/index",
+				"text": "我的",
+				"iconPath": "static/image/tabbar/tabbara1.png",
+				"selectedIconPath": "static/image/tabbar/tabbara3.png"
+			}
+		]
+	}
+}

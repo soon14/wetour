@@ -1,0 +1,19 @@
+{
+  "name": "wetour-driver-app",
+  "version": "1.0.0",
+  "description": "微途伙伴app(司机端)",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://git.ubus.vip/wetour/wetour-driver-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "js-pinyin": "^0.1.9"
+  }
+}
